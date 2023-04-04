@@ -2,6 +2,7 @@ body{
     background-color: #EDEAE5;
 }
 
+
 .oculto {
     display: none;
 }
@@ -9,7 +10,7 @@ body{
 
 i{
    font-size: 50px;
-   color: #222629;
+   color: #0189f2;
    border: transparent;
    transition: all 0.3s ease-in-out;
 }
@@ -18,17 +19,19 @@ i{
 i:hover {
     transform: scale(1.5);
     color:#13a76b }
+
+
     #btnMostrarMapa{
         border: transparent;
         background-color: transparent;}
-        #barra{background-color: #13a76b;
+        #barra{background-color:#6a6e71;
         font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;}
 
     
 
 
-*{color:#edeae5}
+
 
 
 
@@ -42,14 +45,7 @@ width: cover;
 
 
 /*perfiles0*/
-.container-sm {
-   
-    
 
-   
-   
-  
-}
 
 
 
