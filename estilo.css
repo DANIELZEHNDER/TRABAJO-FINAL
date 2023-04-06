@@ -1,0 +1,103 @@
+
+
+
+*{color:#edeae5}
+
+
+
+
+
+body {
+    background: #edeae5;
+width: cover;
+}
+
+
+
+/*perfiles0*/
+.container-sm {
+   
+    
+
+   
+   
+  
+}
+
+
+
+.container-sm figure {
+    position: relative;
+    height: 350px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.container-sm figure img {
+    width: 250px;
+    height: 350px;
+    transition: all 500ms ease-in-out;
+
+}
+
+.container-sm figure .capa {
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 5, 5, 0.775);
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.container-sm figure:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.container-sm figure:hover>.capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+
+}
+
+.container-sm figure:hover>img {
+
+    transform: scale(1.1);
+
+
+}
+
+.container-sm figure .capa h3 {
+    letter-spacing: 5px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-in-out;
+    margin-top: 100px;
+}
+
+.ccontainer-sm figure .capa p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+   
+
+}
+
+#franco { transform: translate(0,0%);}
+#gabi{ transform: translate(50%,);}
+
+
+
+
+/*/fin de perfiles/*/
+

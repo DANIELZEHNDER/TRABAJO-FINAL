@@ -1,0 +1,32 @@
+.oculto {
+    display: none;
+    
+}
+
+
+i {
+    text-align: center;
+    font-size: 50px;
+    align-content: center;
+    margin-left: 23%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    color: blueviolet;
+   
+
+}
+
+i:hover {
+     transform: scale(2.2);}
+
+     #btnMostrarMapa{
+        border: transparent;
+       
+     }
+
+   .col {
+   float: inline-end;
+    
+   }
+   #fondo{ transform: translate(-100px,500px);}
