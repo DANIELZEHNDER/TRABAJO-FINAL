@@ -105,19 +105,27 @@ i:hover {
     line-height: 1.5;
     width: 100%;
     max-width: 220px;
-   
-
 }
 
 #franco { transform: translate(0,0%);}
 #gabi{ transform: translate(50%,);}
 
-
-
-
 /*/fin de perfiles/*/
 
+/* Formulario Wizard */
 
+.multi {
+ background-color: #13a76b;
+ border-radius: 10px;
+ box-shadow: 4px 4px 4px #6a6e71;
+}
 
+.step {  
+    display: none; 
+}
 
-      
+.step.active {  
+    display: block;
+}
+
+/* Fin Formulario Wizard */
