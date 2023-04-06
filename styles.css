@@ -1,5 +1,6 @@
 body{
     background-color: #EDEAE5;
+    width: cover;
 }
 
 
@@ -31,16 +32,8 @@ i:hover {
     
 
 
+.capa {color:#EDEAE5}
 
-
-
-
-
-
-body {
-    background: #edeae5;
-width: cover;
-}
 
 
 
