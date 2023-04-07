@@ -1,11 +1,11 @@
 function contactopdf(){
 
     //--- Captura datos de Inputs
-    var nombrePdf = document.getElementById("introducir_nombre").value,
-        emailPdf = document.getElementById("introducir_email").value,
-        telefonoPdf = document.getElementById("introducir_telefono").value,
-        asuntoPdf = document.getElementById("introducir_asunto").value,
-        mensajePdf = document.getElementById("introducir_mensaje").value;
+    var nombrePdf = document.getElementById("nombre").value,
+        emailPdf = document.getElementById("email").value,
+        telefonoPdf = document.getElementById("telefono").value,
+        asuntoPdf = document.getElementById("assunto").value,
+        mensajePdf = document.getElementById("mensaje").value;
     
     //--- Generacion de PDF
     var doc = new jsPDF();
