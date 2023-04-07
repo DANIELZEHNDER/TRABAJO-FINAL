@@ -34,6 +34,57 @@
 </head>
 
 <body>
+    <div class='main'>
+        <div class="sweet">
+            <p id="palabra">Fl</p>
+            <img src="https://imgur.com/8N4feKG.png" class="img1 ani_img" id="flores"></img>
+            <img src="https://imgur.com/EWwDcPE.png" class="img2 ani_img" id="flores"></img>
+            <p id="palabra">Wers</p>
+        </div>
+        <button type="button" class="btn" id="btnmegusta"><img src="https://img.icons8.com/ios/50/null/facebook-like--v1.png"/></button>
+    </div>
+    <script>
+
+        const CookiesArray = [
+
+            "https://imgur.com/EWwDcPE.png",
+            "https://imgur.com/LtFvYfZ.png",
+            "https://imgur.com/Y2u0pkW.png",
+            "https://imgur.com/kjR3lxy.png",
+            "https://imgur.com/M9uRSPp.png",
+            "https://imgur.com/wCuwhMn.png",
+            "https://imgur.com/wCuwhMn.png",
+            "https://imgur.com/zcTbrza.png",
+            "https://imgur.com/8N4feKG.png",
+            "https://imgur.com/wCuwhMn.png",
+            "https://imgur.com/dMq4Kdx.png",
+            "https://imgur.com/j0cCRgo.png",
+
+        ];
+
+        const img1 = document.querySelector(".img1");
+        const img2 = document.querySelector(".img2");
+        const btn = document.querySelector("button");
+
+        // window.onload = () => RandomCookies(CookiesArray);
+        btn.addEventListener("click", () => RandomCookies(CookiesArray));
+
+        function RandomCookies(array) {
+            img1.classList.add('flipInX');
+            img2.classList.add('flipInX');
+            let randomNum = Math.floor(Math.random() * array.length);
+            img1.setAttribute("src", array[randomNum]);
+            img2.setAttribute("src", array[Math.floor(Math.random() * array.length)]);
+        }
+
+        btn.onclick = function () {
+            return setTimeout((function () {
+                img1.classList.remove('flipInX');
+                img2.classList.remove('flipInX');
+            }), 400);
+        };
+
+    </script>
     <!--    
     <header id="header">
         <iframe src="header.html" frameborder="0" class="w-100" style="height: 80px;" id="iheader"></iframe>
