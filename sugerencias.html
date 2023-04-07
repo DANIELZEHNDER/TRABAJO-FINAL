@@ -30,7 +30,8 @@
             $("#footer").load("footer.html");
         });
     </script>
-    
+    <!--jsPDF-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
     <title>Vivero Floower - Formulario de Sugerencias</title>
 </head>
 
@@ -90,7 +91,7 @@
                     </div>
                     <div class="col text-center">
                         <button type="button" onclick="back2()" class="btn btn-success m-2">Volver</button>
-                        <button type="button" onclick="sig3()" class="btn btn-success m-2">VER RESUMEN</button>
+                        <button type="button" onclick="sig3()" class="btn btn-success m-2">Siguiente</button>
                     </div>
                 </div>
                 <!-- Paso 4 -->
@@ -108,6 +109,7 @@
                     </div>
                     <div class="col text-center">
                         <button type="button" onclick="back3()" class="btn btn-success m-2">Volver</button>
+                        <button type="button" onclick="generapdf()" class="btn btn-danger m-2">Descargar PDF</button>
                         <button type="submit" class="btn btn-primary m-2">Enviar</button>
                     </div>
                 </div>

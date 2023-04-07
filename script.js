@@ -60,24 +60,38 @@ function back3() {
   document.getElementById("paso3").classList.add("active");
 };
 
-const datosCampos = () => {
-  let nombreCliente = document.getElementById("nombreInput").value;
-  let apellidoCliente = document.getElementById("apellidoInput").value;
-  let emailCliente = document.getElementById("emailInput").value;
-  let telefonoCliente = document.getElementById("telefonoInput").value;
-  let provinciaCliente = document.getElementById("provinciaInput").value;
-  let localidadCliente = document.getElementById("localidadInput").value;
-  let cpCliente = document.getElementById("cpInput").value;
-  let sugerenciaCliente = document.getElementById("sugenrenciaInput").value;
+function generapdf(){
 
-  document.getElementById("nombreText").innerText = nombreCliente;
-  document.getElementById("apellidoText").innerText = apellidoCliente;
-  document.getElementById("emailText").innerText = emailCliente;
-  document.getElementById("telefonoText").innerText = telefonoCliente;
-  document.getElementById("provinciaText").innerText = provinciaCliente;
-  document.getElementById("localidadText").innerText = localidadCliente;
-  document.getElementById("cpText").innerText = cpCliente;
-  document.getElementById("sugerenciasText").innerText = sugerenciaCliente;
+//--- Captura datos de Inputs
+var nombrePdf = document.getElementById("nombreInput").value,
+    apellidoPdf = document.getElementById("apellidoInput").value,
+    emailPdf = document.getElementById("emailInput").value,
+    telefonoPdf = document.getElementById("telefonoInput").value,
+    provinciaPdf = document.getElementById("provinciaInput").value,
+    localidadPdf = document.getElementById("localidadInput").value,
+    cpPdf = document.getElementById("cpInput").value,
+    sugerenciaPdf = document.getElementById("sugenrenciaInput").value;
+
+
+//--- Generacion de PDF
+var doc = new jsPDF();
+
+doc.setFontSize(22);
+doc.text("Sugerencia", 20, 10);
+
+doc.setFontSize(16);
+doc.text("Nombre: " + nombrePdf, 10, 20);
+doc.text("Apellido: " + apellidoPdf, 10, 30);
+doc.text("Email: " + emailPdf, 10, 40);
+doc.text("Telefono: " + telefonoPdf, 10, 50);
+doc.text("Provincia: " + provinciaPdf, 10, 60);
+doc.text("Localidad: " + localidadPdf, 10, 70);
+doc.text("Codigo Postal: " + cpPdf, 10, 80);
+doc.text("Sugerencia: " + sugerenciaPdf, 10, 90);
+
+//--- Salva archivo PDF
+doc.save("sugerencia-floower.pdf")
+
 }
 
 /* --- Fin Formulario Multi Step --- */
