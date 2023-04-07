@@ -4,9 +4,27 @@ body{
 }
 
 
-.oculto {
-    display: none;
+#efectoslink{transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: 700;
+
+
 }
+
+#efectoslink:hover{
+   
+    transform: scale(1.4);
+    color: #226292
+}
+
+
+
+
+
+
+
+
+
 
 
 i{
@@ -22,12 +40,6 @@ i:hover {
     color:#13a76b }
 
 
-    #btnMostrarMapa{
-        border: transparent;
-        background-color: transparent;}
-        #barra{background-color:#6a6e71;
-        font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;}
 
     
 
@@ -117,7 +129,7 @@ i:hover {
 .multi {
  background-color: #13a76b;
  border-radius: 10px;
- box-shadow: 4px 4px 4px #6a6e71;
+ box-shadow: 4px 4px 4px #565a5d;
 }
 
 .step {  
