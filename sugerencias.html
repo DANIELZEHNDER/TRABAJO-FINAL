@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK A HOJA DE ESTILOS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- LINK A INCONS8 - ICONOS -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- LINK A BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- LOAD JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <!--jsPDF-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <title>Vivero Floower - Formulario de Sugerencias</title>
+</head>
+
+<body class="">
+    <header id="header"></header>
+    <div class="container w-50 p-4">
+        <div class="col multi p-3">
+            <form action="https://formsubmit.co/heredia.gabriel@gmail.com" method="POST">
+                <!-- Paso 1 -->
+                <div id="paso1" class="col step active">
+                    <h3>Datos personales:</h3>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input name="Nombre" id="nombreInput" class="form-control" type="text" placeholder="Nombre...">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input name="Apellido" id="apellidoInput" class="form-control" type="text" placeholder="Apellido...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input name="Email" type="email" class="form-control" id="emailInput" placeholder="usuario@dominio.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="Telefono">Telefono</label>
+                        <input name="Telefono" id="telefonoInput" class="form-control" type="number" placeholder="Telefono...">
+                    </div>
+                    <div class="col text-center">
+                        <button type="button" onclick="sig1()" class="btn btn-success m-2">Siguiente</button>
+                    </div>
+                </div>
+                <!-- Paso 2 -->
+                <div id="paso2" class="step">
+                    <h3>Datos de residencia:</h3>
+                    <div class="form-group">
+                        <label for="provincia">Provincia</label>
+                        <input name="Provincia" id="provinciaInput" class="form-control" type="text" placeholder="Provincia de residencia...">
+                    </div>
+                    <div class="form-group">
+                        <label for="localidad">Ciudad / Localidad</label>
+                        <input name="Ciudad" id="localidadInput" class="form-control" type="text" placeholder="Ciudad / Localidad...">
+                    </div>
+                    <div class="form-group">
+                        <label for="cp">Codigo Postal</label>
+                        <input name="CP" id="cpInput" class="form-control" type="text" placeholder="Codigo postal...">
+                    </div>
+                    <div class="col text-center">
+                        <button type="button" onclick="back1()" class="btn previous-btn btn-success m-2">Volver</button>
+                        <button type="button" onclick="sig2()" class="btn btn-success m-2">Siguiente</button>
+                    </div>
+                </div>
+                <!-- Paso 3 -->
+                <div id="paso3" class="step">
+                    <div class="form-group">
+                        <label for="sugenrencia"><h3>Sugerencia:</h3></label>
+                        <textarea name="Sugerencia" id="sugenrenciaInput" rows="6" class="form-control"></textarea>
+                    </div>
+                    <div class="col text-center">
+                        <button type="button" onclick="back2()" class="btn btn-success m-2">Volver</button>
+                        <button type="button" onclick="sig3()" class="btn btn-success m-2">Siguiente</button>
+                    </div>
+                </div>
+                <!-- Paso 4 -->
+                <div id="paso4" class="step">
+                    <div class="col form-group d-inline">
+                        <h5>Nombre: </h5><p style="color: white;" id="nombreText"></p>
+                        <h5>Apellido: </h5><p style="color: white;" id="apellidoText"></p>
+                        <h5>Dirección de E-Mail: </h5><p style="color: white;" id="emailText"></p>
+                        <h5>Teléfono: </h5><p style="color: white;" id="telefonoText"></p>
+                        <h5>Provincia: </h5><p style="color: white;" id="provinciaText"></p>
+                        <h5>Localidad/Ciudad: </h5><p style="color: white;" id="localidadText"></p>
+                        <h5>Codigo Postal: </h5><p style="color: white;" id="cpText"></p>
+                        <h5>Sugerencia: </h5><br>
+                        <p style="color: white;" id="sugerenciasText"></p>
+                    </div>
+                    <div class="col text-center">
+                        <button type="button" onclick="back3()" class="btn btn-success m-2">Volver</button>
+                        <button type="button" onclick="generapdf()" class="btn btn-danger m-2">Descargar PDF</button>
+                        <button type="submit" class="btn btn-primary m-2">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+    <footer id="footer"></footer>
+</body>
+
+</html>

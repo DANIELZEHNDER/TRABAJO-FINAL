@@ -1,5 +1,6 @@
 body{
     background-color: #EDEAE5;
+<<<<<<< HEAD
 }
 
 
@@ -42,3 +43,319 @@ padding-bottom: 15px;
 .accordion-body {
     background-color: #8de4af;
 }
+=======
+    
+}
+
+
+
+#efectoslink {
+    display: inline-block;
+    position: relative;
+    color: #edeae5;
+    text-decoration: none;
+    font-weight: 700;
+    }
+    #efectoslink:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+    }
+    #efectoslink:hover:after {
+    width: 100%;
+    background: #226292;
+    }
+
+
+    #efectoslink2 {
+        
+        display: inline-block;
+        position: relative;
+        color: #222629;
+        text-decoration: none;
+        padding: 0 4px;
+        font-weight: 400;
+        }
+        #efectoslink2:before,
+        #efectoslink2:after {
+            
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        transform: scale(0);
+        transition: 0.5s;
+        }
+        #efectoslink2:before {
+        border-bottom: 2px solid #6a6e71;
+        border-left: 2px solid #6a6e71;
+        transform-origin: 0 100%;
+        }
+        #efectoslink2:after {
+        border-top: 2px solid #6a6e71;
+        border-right: 2px solid #6a6e71;
+        transform-origin: 100% 0%;
+        }
+        #efectoslink2:hover:after,
+        #efectoslink2:hover:before {
+            transition: all 1000ms ease-in-out;
+        transform: scale(1);
+        }
+
+
+
+
+
+
+i{
+   font-size: 50px;
+   color: #0189f2;
+   border: transparent;
+   transition: all 0.3s ease-in-out;
+}
+
+   
+i:hover {
+    transform: scale(1.5);
+    color:#13a76b }
+
+
+
+    
+
+
+.capa {color:#EDEAE5}
+
+
+
+
+/*perfiles0*/
+
+
+
+
+.container-sm figure {
+    position: relative;
+    height: 350px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.container-sm figure img {
+    width: 250px;
+    height: 350px;
+    transition: all 500ms ease-in-out;
+
+}
+
+.container-sm figure .capa {
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 5, 5, 0.775);
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.container-sm figure:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.container-sm figure:hover>.capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+
+}
+
+.container-sm figure:hover>img {
+
+    transform: scale(1.1);
+
+
+}
+
+.container-sm figure .capa h3 {
+    letter-spacing: 5px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-in-out;
+    margin-top: 100px;
+}
+
+.ccontainer-sm figure .capa p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+}
+
+#franco { transform: translate(0,0%);}
+#gabi{ transform: translate(50%,);}
+
+/*/fin de perfiles/*/
+
+/* Formulario Wizard */
+
+.multi {
+ background-color: #13a76b;
+ border-radius: 10px;
+ box-shadow: 4px 4px 4px #565a5d;
+}
+
+.step {  
+    display: none; 
+}
+
+.step.active {  
+    display: block;
+}
+
+/* Fin Formulario Wizard */
+
+
+
+
+/*megusta logo*/
+.main {
+    background-color: #222222;
+    height: 10%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.sweet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#palabra {
+    font-family: "Rubik Iso", cursive;
+ font-size: 50px;
+    text-align: center;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+        0 0 200px #0072ff;
+    color: #fff;
+}
+
+#flores {
+    max-height: 40px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+    animation-duration: 0.8s;
+}
+
+#btnmegusta {
+    color: #fff;
+    background-color: #222222;
+    
+ border-radius: 20px;
+    
+
+    text-shadow: 0 0 5px #0072ff, 0 0 10px #0072ff, 0 0 15px #0072ff,
+        0 0 20px #0072ff;
+    box-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff,
+        #0072ff 10px 20px 60px -12px inset;
+    cursor: grab;
+}
+
+
+@-webkit-keyframes flipInX {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes flipInX {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.flipInX {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+}
+
+
+
+
+
+
+/*--------------------MAPA-----------------------------*/
+
+
+
+
+
+
+>>>>>>> DANIEL-
