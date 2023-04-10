@@ -1,5 +1,49 @@
 body{
     background-color: #EDEAE5;
+<<<<<<< HEAD
+}
+
+
+CURSOS
+
+#solapa-activa {
+    color: #13a76b;
+}
+
+#solapa-cerrada {
+    color: #6a6e71;
+}
+
+#solapa-cerrada:hover {
+    color: #13a76b;    
+}
+
+#título-curso {
+padding-top: 10px;
+padding-bottom: 15px;
+}
+
+#inscribirme {
+    background-color: #13a76b;
+    border: none;
+}
+
+#inscribirme:hover {
+    transform: scale(1.1);
+}
+
+#descripción {
+    padding: 25px;
+}
+
+.accordion-button {
+    border-color: #13a76b;
+}
+
+.accordion-body {
+    background-color: #8de4af;
+}
+=======
     
 }
 
@@ -314,3 +358,4 @@ i:hover {
 
 
 
+>>>>>>> DANIEL-
