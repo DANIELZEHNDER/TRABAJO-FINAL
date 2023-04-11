@@ -11,9 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap">
     <link rel="icon" href="./img/logos/favicon.png" type="png" sizes="16px">
     <title>FLOOWER - el poder de los flores</title>
+    <!-- LOAD JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 <body>
- 
+    <header id="header"></header>
     <div class="card text-start">
         <div class="card-header">
           <ul class="nav nav-tabs card-header-tabs">
@@ -132,5 +142,6 @@
             </div>
         </div>
     </div>
+    <footer id="footer"></footer>
 </body>
 </html>
