@@ -3,28 +3,28 @@
  *
  *      Whatsapp Chat Support
  *      Version: 1.2
- *      By [castlecode]
+ *      
  *      
  *      ---------------------------------
- *      CONTENTS
+ *      CONTENIDO
  *      ---------------------------------
  *
- *      [A] WHATSAPP CHAT SUPPORT CLASS
- *      [B] DEFAULTS
- *      [C] INIT
- *          [1] SETUP
- *          [2] ON CLICK
- *          [3] OPEN / CLOSE
- *          [4] GO TO WHATSAPP
- *          [5] CHECK AVAILABILITY
- *      [D] WHATSAPP CHAT SUPPORT PLUGIN
+* [A] CLASE DE SOPORTE POR CHAT DE WHATSAPP
+  * [B] POR DEFECTO
+  * [C] INICIO
+  * [1] CONFIGURACIÓN
+  * [2] AL HACER CLIC
+  * [3] ABRIR/CERRAR
+  * [4] IR A WHATSAPP
+  * [5] CONSULTAR DISPONIBILIDAD
+  * [D] COMPLEMENTO DE SOPORTE DE CHAT DE WHATSAPP
  *      
  * ======================================================= */
 
 (function( window, $, undefined ){
 
 /* ====================================================================== *
-        [A] WHATSAPP CHAT SUPPORT CLASS
+        * [A] CLASE DE SOPORTE POR CHAT DE WHATSAPP
  * ====================================================================== */    
 
     var WhatsappChatSupport = function(container, options){
@@ -32,22 +32,22 @@
     }
 
 /* ====================================================================== *
-        [B] DEFAULTS
+       * [B] POR DEFECTO
  * ====================================================================== */    
     
     WhatsappChatSupport.DEFAULTS = {
 
         // Options
 
-        popupFx                     :   '1', // The popup effect from 0 till 14
-        now                         :   '', // When empty it will use the date and time from the user browser if not you can assign it with PHP maybe (which will be the date of the server) format: YYYY-MM-DD HH:mm:ss (2019-12-30 18:30:00) 
-        timezone                    :   'America/Lima', // When using the date and time from the user browser you can transform it to your current timezone (in case your user is in a different timezone)
-        notAvailableMsg             :   'Estamos fuera de horario', // message when its not an available day or once the available hours have passed
-        almostAvailableMsg          :   'Estaré disponible pronto', // if today is an available day and before the time starts
-        dialogNotAvailableMsg       :   'Estamos fuera de horario', // message when its not an available day or once the available hours have passed
-        dialogAlmostAvailableMsg    :   'Estaré disponible pronto', // if today is an available day and before the time starts
-        defaultMsg                  :   'Hola, tengo algunas preguntas sobre esta página: {{url}}!', // default support msg     
-        debug                       :   false, // some messages for debug purposes
+        popupFx                     :   '1', // El efecto emergente de 0 a 14
+        now                         :   '', // Cuando esté vacío, usará la fecha y la hora del navegador del usuario; de lo contrario, puede asignarlo con PHP tal vez (que será la fecha del servidor) formato: AAAA-MM-DD HH: mm: ss (2019-12-30 18:30:00) 
+        timezone                    :   'America/Lima', // Al usar la fecha y la hora desde el navegador del usuario, puede transformarla a su zona horaria actual (en caso de que su usuario esté en una zona horaria diferente)
+        notAvailableMsg             :   'Estamos fuera de horario', // mensaje cuando no es un día disponible o una vez que las horas disponibles han pasado
+        almostAvailableMsg          :   'Estaré disponible pronto', // si hoy es un día disponible y antes de que comience el tiempo
+        dialogNotAvailableMsg       :   'Estamos fuera de horario', // mensaje cuando no es un día disponible o una vez que las horas disponibles han pasado
+        dialogAlmostAvailableMsg    :   'Estaré disponible pronto', // si hoy es un día disponible y antes de que comience el tiempo
+        defaultMsg                  :   'Hola, tengo algunas preguntas sobre esta página: {{url}}!', // mensaje de soporte predeterminado   
+        debug                       :   false, // algunos mensajes con fines de depuración
 
         // Events
 
@@ -58,16 +58,16 @@
     };    
 
 /* ====================================================================== *
-        [C] INIT
+      * [C] INICIO
  * ====================================================================== */    
 
     WhatsappChatSupport.prototype.init = function(container, options){   
         
     /* ====================================================================== *
-            [1] SETUP
+          * [1] CONFIGURACIÓN
      * ====================================================================== */
 
-        /* SETTINGS */
+        /* AJUSTES */
         
         var settings                    = $.extend(true, {}, WhatsappChatSupport.DEFAULTS, options);
 
@@ -95,10 +95,10 @@
         }
 
     /* ====================================================================== *
-            [2] ON CLICK
+           * [2] AL HACER CLIC
      * ====================================================================== */    
 
-        /* OPEN POPUP */
+        /* ABRIR POPUP */
 
         $button.on('click', function(){
 
@@ -124,13 +124,13 @@
 
         })
 
-        /* CLOSE POPUP */
+        /* CERRAR ELEMENTO EMERGENTE */
 
         $popup.find('.wcs_popup_close').on('click', function(){
             close_popup();
         });
 
-        /* BUTTON CLICK WITHOUT POPUP */
+        /*  CLIC  BOTÓN  */
 
         $button.on('click', function(){
             var $this = $(this)
@@ -140,7 +140,7 @@
             }
         })
 
-        /* POPUP CHAT (SINGLE PERSON) */
+        /* CHAT EMERGENTE (UNA PERSONA) */
 
         popup_input.on('click', '.fa', function(){
             var $this           = $(this);
@@ -172,7 +172,7 @@
         })
 
     /* ====================================================================== *
-            [3] OPEN / CLOSE
+          * [3] ABRIR/CERRAR
      * ====================================================================== */    
      
         function open_popup(){
@@ -206,7 +206,7 @@
         }
 
     /* ====================================================================== *
-            [4] GO TO WHATSAPP
+              * [4] IR A WHATSAPP
      * ====================================================================== */     
 
         function go_to_whatsapp(number, text){
@@ -226,14 +226,14 @@
         }
 
     /* ====================================================================== *
-            [5] CHECK AVAILABILITY
+           [5] CONSULTAR DISPONIBILIDAD
      * ====================================================================== */         
 
         var now         = moment();
 
         debug.append("<div><strong>Original Date</strong> "+now.format('YYYY-MM-DD HH:mm:ss')+" <br><strong>UTC Offsset</strong> "+(now.utcOffset()/60)+"</div>");
 
-        if(settings.timezone != '' && settings.now == ''){ // set timezone
+        if(settings.timezone != '' && settings.now == ''){ // ESTABLECER ZONA HORARIA
             now.tz(settings.timezone);
 
             debug.append("<div><strong>Setting Timezone</strong> "+now.format('YYYY-MM-DD HH:mm:ss')+" <br><strong>UTC Offsset</strong> "+(now.utcOffset()/60)+"</div>");
@@ -245,13 +245,13 @@
             debug.append("<div><strong>Setting Manual Date</strong> "+now.format('YYYY-MM-DD HH:mm:ss')+" <br><strong>UTC Offsset</strong> "+(now.utcOffset()/60)+"</div>");
         }
 
-        /* BUTTON ONLY */
+        /* BOTON SOLO*/
 
         if($button.attr('data-availability') != undefined){
             var available           = is_available($.parseJSON($button.attr('data-availability')));
 
             if(available.is_available){
-                // all good!
+                
             }else{
                 $button.addClass('wcs_button_person_offline');
                 $button.find('.wcs_button_person_status').html(available.almost_available ? settings.almostAvailableMsg : settings.notAvailableMsg);
@@ -264,14 +264,14 @@
             var available           = is_available($.parseJSON(popup_input.attr('data-availability')));
 
             if(available.is_available){
-                // all good!
+               
             }else{
                 popup_input.addClass('wcs_popup_input_offline');
                 popup_input.html(available.almost_available ? settings.dialogAlmostAvailableMsg : settings.dialogNotAvailableMsg);
             }
         }
 
-        /* MULTIPLE PERSON */
+        /* PERSON MULTIPLE */
 
         popup_persons.find('.wcs_popup_person').each(function(){
             var $this = $(this);
@@ -280,7 +280,7 @@
                 var available           = is_available($.parseJSON($this.attr('data-availability')));
 
                 if(available.is_available){
-                    // all good!
+                    
                 }else{
                     $this.addClass('wcs_popup_person_offline');
                     $this.find('.wcs_popup_person_status').html(available.almost_available ? settings.dialogAlmostAvailableMsg : settings.dialogNotAvailableMsg);
@@ -289,7 +289,7 @@
             }
         });
 
-        /* CHECK AVAILABILITY */
+        /* CONSULTAR DISPONIBILIDAD */
 
         function is_available(available){
             var is_available        = false;
@@ -298,8 +298,8 @@
             for(var key in available) {
                 if(available.hasOwnProperty(key)){
                     if(get_day_of_week(key) == now.day()){
-                        var start   = moment($.trim(available[key].split('-')[0]), 'HH:mm'); // available[key] is in this format: 8:00-18:33
-                        var end     = moment($.trim(available[key].split('-')[1]), 'HH:mm'); // available[key] is in this format: 8:00-18:33
+                        var start   = moment($.trim(available[key].split('-')[0]), 'HH:mm'); // disponible[] está en este formato: 8:00-18:33
+                        var end     = moment($.trim(available[key].split('-')[1]), 'HH:mm'); 
 
                         if (now.isAfter(start) && now.isBefore(end)) {
                             is_available        = true;
@@ -334,10 +334,10 @@
             }
         }
         
-    };//END OF INIT   
+    };//FIN DE INICIO 
 
 /* ====================================================================== *
-        [D] WHATSAPP CHAT SUPPORT PLUGIN
+      [D] COMPLEMENTO DE SOPORTE DE CHAT DE WHATSAPP
  * ====================================================================== */
 
     $.fn.whatsappChatSupport = function(options, content, callback) {
@@ -346,12 +346,12 @@
             var $this   = $(this);
             var data    = $this.data('whatsappChatSupport')
             
-            // Initialize plugin
+            // INICIANDO plugin
             if (!data && typeof options != 'string'){
                 $this.data('whatsappChatSupport', new WhatsappChatSupport(this, options));
             }
 
-            // Call method
+            // METODO DE LLAMADA
             if (data && typeof options == 'string'){
                 data[options](content, callback);    
             }

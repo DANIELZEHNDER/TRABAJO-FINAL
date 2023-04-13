@@ -43,13 +43,11 @@
             <img src="/img/f0.png" class="img2 ani_img" id="flores"></img>
             <p id="palabra">Wers</p>
         </div>
-        <button type="button" class="btn" id="btnmegusta"><img src="https://img.icons8.com/ios/50/null/facebook-like--v1.png"/></button>
+       
     </div>
     <script>
-
         const CookiesArray = [
-
-            "img/f8.png",
+        "img/f8.png",
             "img/f9.png",
             "img/f0.png",
             "img/f1.png",
@@ -61,30 +59,40 @@
             "img/f7.png",
             "img/f8.png",
             "img/f9.png",
+];
 
-        ];
+const img1 = document.querySelector(".img1");
+const img2 = document.querySelector(".img2");
 
-        const img1 = document.querySelector(".img1");
-        const img2 = document.querySelector(".img2");
-        const btn = document.querySelector("button");
+// Llamar a la función RandomCookies una vez para establecer las imágenes iniciales
+RandomCookies(CookiesArray);
 
-        // window.onload = () => RandomCookies(CookiesArray);
-        btn.addEventListener("click", () => RandomCookies(CookiesArray));
+// Cambiar automáticamente las imágenes cada 2 segundos
+setInterval(() => {
+  RandomCookies(CookiesArray);
+}, 2000);
 
-        function RandomCookies(array) {
-            img1.classList.add('flipInX');
-            img2.classList.add('flipInX');
-            let randomNum = Math.floor(Math.random() * array.length);
-            img1.setAttribute("src", array[randomNum]);
-            img2.setAttribute("src", array[Math.floor(Math.random() * array.length)]);
-        }
+function RandomCookies(array) {
+    img1.classList.add('flipInX');
+    img2.classList.add('flipInX');
+    let randomNum = Math.floor(Math.random() * array.length);
+    img1.setAttribute("src", array[randomNum]);
+    img2.setAttribute("src", array[Math.floor(Math.random() * array.length)]);
+}
 
-        btn.onclick = function () {
-            return setTimeout((function () {
-                img1.classList.remove('flipInX');
-                img2.classList.remove('flipInX');
-            }), 400);
-        };
+// Restablecer las animaciones de las imágenes después de que cambien automáticamente
+function resetAnimations() {
+    img1.classList.remove('flipInX');
+    img2.classList.remove('flipInX');
+}
+
+// Llamar a la función resetAnimations después de cada cambio de imagen
+img1.addEventListener('animationend', resetAnimations);
+img2.addEventListener('animationend', resetAnimations);
+     
+
+     
+      
 
     </script>
     <header id="header"></header>
@@ -192,7 +200,7 @@
 </div>
 <iframe
 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4046.4115946499974!2d-64.2385567891062!3d-31.47983019214155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3ff20492179%3A0xfc7ee6198698005a!2sVivero%20flower!5e0!3m2!1ses-419!2sar!4v1680303368104!5m2!1ses-419!2sar"
-width="100%" height="300" style="border: 3px;;" allowfullscreen="" loading="lazy"
+width="99%" height="300" style="border: 3px;;" allowfullscreen="" loading="lazy"
 referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
 <footer id="footer"></footer>
 </body>

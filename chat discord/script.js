@@ -1,10 +1,10 @@
-const btnMostrarMapa = document.getElementById('btnMostrarMapa');
-const mapa = document.getElementById('map');
+const btnMostrarMapa = document.getElementById('btnMostrarDiscord');
+const Discord = document.getElementById('Discord');
 
 btnMostrarMapa.addEventListener('click', () => {
-  if (mapa.classList.contains('oculto')) {
-    mapa.classList.remove('oculto');
+  if (Discord.classList.contains('oculto')) {
+    Discord.classList.remove('oculto');
   } else {
-    mapa.classList.add('oculto');
+    Discord.classList.add('oculto');
   }
 });
