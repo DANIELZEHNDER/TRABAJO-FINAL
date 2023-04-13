@@ -13,19 +13,27 @@ btnMostrarMapa.addEventListener('click', () => {
 /* --- Formulario multi Step --- */
 
 function sig1() {
-  document.getElementById("paso2").classList.add("active");
-  document.getElementById("paso1").classList.remove("active");
+  let nombreCliente = document.getElementById("nombreInput").value;
+  let apellidoCliente = document.getElementById("apellidoInput").value;
+  let emailCliente = document.getElementById("emailInput").value;
+  let telefonoCliente = document.getElementById("telefonoInput").value;
+
+  if (nombreCliente != "" && apellidoCliente != "" && emailCliente != "" && telefonoCliente != "") {
+    document.getElementById("paso2").classList.add("active");
+    document.getElementById("paso1").classList.remove("active"); 
+  }
 };
 
 function sig2() {
-  document.getElementById("paso2").classList.remove("active");
-  document.getElementById("paso3").classList.add("active");
-};
-function sig3() {
-  
-  document.getElementById("paso3").classList.remove("active");
-  document.getElementById("paso4").classList.add("active");
+  let provinciaCliente = document.getElementById("provinciaInput").value;
 
+  if (provinciaCliente != ""){
+    document.getElementById("paso2").classList.remove("active");
+    document.getElementById("paso3").classList.add("active");
+  }
+};
+
+function sig3() {
   let nombreCliente = document.getElementById("nombreInput").value;
   let apellidoCliente = document.getElementById("apellidoInput").value;
   let emailCliente = document.getElementById("emailInput").value;
@@ -34,6 +42,11 @@ function sig3() {
   let localidadCliente = document.getElementById("localidadInput").value;
   let cpCliente = document.getElementById("cpInput").value;
   let sugerenciaCliente = document.getElementById("sugenrenciaInput").value;
+  
+  if(sugerenciaCliente != "")
+  {
+  document.getElementById("paso3").classList.remove("active");
+  document.getElementById("paso4").classList.add("active");
 
   document.getElementById("nombreText").innerHTML = nombreCliente;
   document.getElementById("apellidoText").innerHTML = apellidoCliente;
@@ -43,6 +56,9 @@ function sig3() {
   document.getElementById("localidadText").innerHTML = localidadCliente;
   document.getElementById("cpText").innerHTML = cpCliente;
   document.getElementById("sugerenciasText").innerHTML = sugerenciaCliente;
+  } else {
+  document.getElementById("aviso").innerHTML = "* Debe completar el campo de texto SUGERENCIA";
+  }
 };
 
 function back1() {
