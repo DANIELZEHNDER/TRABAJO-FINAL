@@ -12,6 +12,7 @@
     <!-- LINK A INCONS8 - ICONOS -->
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <!-- LINK A BOOTSTRAP CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,78 +34,113 @@
     <title>Vivero Floower</title>
 </head>
 
-<body>
+<body id="Cdesarrolladores">
 
   <header id="header"></header>
 
-  <div class="container-sm d-flex mt-5">
-    <div class="col" id="franco">
-      <figure>
-        <img src="img/francod.jpg" alt="franco dimitri" />
-        <div class="capa">
-          <h3>.Franco Dimitri</h3>
-          <p>
-            Soy franco, el pedicura del grupo, mantengo y estetizo los pies de
-            la pagina.
-          </p>
-        </div>
-      </figure>
+  <div class="container text-center py-5">
+    <h2 class="text-white">Nuestro Equipo</h2>
+    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, pariatur!</p>
 
-      <figure>
-        <img src="img/ceciliam.jpg" alt="MCeciliaMiño" />
-        <div class="capa">
-          <h3>.Maria Cecilia Miño</h3>
-          <p>
-            Soy Ceci, amo trabajar para la web, mi especializacion son las
-            funciones arrow!
-          </p>
-        </div>
-      </figure>
-
-      <figure id="veronica">
-        <img src="img/veronicaa.jpg" alt="Veronica Aparicio" />
-        <div class="capa">
-          <h3>.Veronica Aparicio</h3>
-          <p>
-            Soy Vero, la Milenial del grupo con ideas Centenials!. Me renuevo
-            todo el tiempo.
-          </p>
-        </div>
-      </figure>
-    </div>
-    <div class="col" id="gabi">
-      <figure>
-        <img src="img/gabrielh.jpg" alt="gabriel heredia" />
-        <div class="capa">
-          <h3>.Gabriel Heredia</h3>
-          <p>Soy gabi, Lider flex. Margin Error NuLL</p>
-        </div>
-      </figure>
-
-      <figure>
-        <img src="img/celesteb.jpg" alt="celeste Baiocco" />
-        <div class="capa">
-          <h3>.Celeste Baiocco</h3>
-          <p>
-            Soy Cele,11100010 10011001 10100101 01111001 01101111 01110000
-            01110010 01101111 01100111 01110010 01100001 01101101 01101111
-            11100010 10011001 10100101
-          </p>
-        </div>
-      </figure>
-
-      <figure>
-        <img src="img/danielz.jpg" alt="DanielZehnder" />
-        <div class="capa">
-          <h3>.Daniel Zehnder</h3>
-          <p>
-            Soy Daniel, Pero me siento Johann Konrad Dippel despues de cada
-            trabajo terminado.
-          </p>
-        </div>
-      </figure>
-    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+<div class="col">
+<div class="card">
+  <img src="img/francod.jpg" class="card-img-top" alt="Franco">
+  <div class="card-body">
+    <h3 class="card-title">.Franco Dimitri</h3>
+    <p class="text-muted">Desarrollador Footer</p>
+    <p class="card-text">El pedicura del grupo, mantengo y estetizo los pies de
+        la pagina.</p>
   </div>
+  <div  class="d-flex justify-content-evenly">
+    <i class="bi bi-linkedin"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-envelope-check-fill"></i>
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card">
+  <img src="img/ceciliam.jpg" class="card-img-top" alt="MCeciliaMiño">
+  <div class="card-body">
+    <h3 class="card-title">.Maria Cecilia Miño</h3>
+    <p class="text-muted">Encargada de las Noticias</p>
+    <p class="card-text"> Soy Ceci, amo trabajar para la web, mi especializacion son las
+        funciones arrow!</p>
+  </div>
+  <div  class="d-flex justify-content-evenly">
+    <i class="bi bi-linkedin"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-envelope-check-fill"></i>
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card">
+  <img src="img/veronicaa.jpg" class="card-img-top" alt="Veronicaa">
+  <div class="card-body">
+    <h3 class="card-title">Veronica Aparicio</h3>
+    <p class="text-muted">Desarrollos Formularios</p>
+    <p class="card-text"> Soy Vero, la Milenial del grupo con ideas Centenials!. Me renuevo
+        todo el tiempo.</p>
+  </div>
+  <div  class="d-flex justify-content-evenly">
+    <i class="bi bi-linkedin"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-envelope-check-fill"></i>
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card">
+  <img src="img/gabrielh.jpg" class="card-img-top" alt="Gabriel">
+  <div class="card-body">
+    <h3 class="card-title">.Gabriel Heredia</h3>
+    <p class="text-muted">CEO co-founder</p>
+    <p class="card-text">Soy gabi, Lider flex. Margin Error NuLL  experto en detectar problemas</p>
+  </div>
+  <div  class="d-flex justify-content-evenly">
+    <i class="bi bi-linkedin"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-envelope-check-fill"></i>
+  </div>
+</div>
+</div>
+
+<div class="col">
+<div class="card">
+  <img src="img/celesteb.jpg" class="card-img-top" alt="Celeste Baiocco">
+  <div class="card-body">
+    <h3 class="card-title">.Celeste Baiocco</h3>
+    <p class="text-muted">CEO </p>
+    <p class="card-text">Responsive Creative Team Section Page  Bootstrap 5
+        </p>
+  </div>
+  <div  class="d-flex justify-content-evenly">
+    <i class="bi bi-linkedin"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-envelope-check-fill"></i>
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card">
+  <img src="img/danielz.jpg" class="card-img-top" alt="Daniel Zehnder">
+  <div class="card-body">
+    <h3 class="card-title">.Daniel Zehnder</h3>
+    <p class="text-muted">CEO founder</p>
+    <p class="card-text"> Soy Daniel, Pero me siento Johann Dippel despues de cada
+        trabajo terminado.</p>
+  </div>
+  <div  class="d-flex justify-content-evenly">
+    <i class="bi bi-linkedin"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-envelope-check-fill"></i>
+  </div>
+</div>
+</div>
+</div>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

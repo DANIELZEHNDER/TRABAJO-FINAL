@@ -20,7 +20,7 @@ function sig1() {
 
   if (nombreCliente != "" && apellidoCliente != "" && emailCliente != "" && telefonoCliente != "") {
     document.getElementById("paso2").classList.add("active");
-    document.getElementById("paso1").classList.remove("active"); 
+    document.getElementById("paso1").classList.remove("active");
   }
 };
 
@@ -91,19 +91,23 @@ var nombrePdf = document.getElementById("nombreInput").value,
 
 //--- Generacion de PDF
 var doc = new jsPDF();
+var logo = new Image();
+logo.src = '/img/logos/logo-floower-negro.png';
 
 doc.setFontSize(22);
-doc.text("Sugerencia", 20, 10);
+doc.addImage(logo, 50, 0, 100, 20);
 
 doc.setFontSize(16);
-doc.text("Nombre: " + nombrePdf, 10, 20);
-doc.text("Apellido: " + apellidoPdf, 10, 30);
-doc.text("Email: " + emailPdf, 10, 40);
-doc.text("Telefono: " + telefonoPdf, 10, 50);
-doc.text("Provincia: " + provinciaPdf, 10, 60);
-doc.text("Localidad: " + localidadPdf, 10, 70);
-doc.text("Codigo Postal: " + cpPdf, 10, 80);
-doc.text("Sugerencia: " + sugerenciaPdf, 10, 90);
+doc.text("Nombre: " + nombrePdf, 10, 30);
+doc.text("Apellido: " + apellidoPdf, 10, 40);
+doc.text("Email: " + emailPdf, 10, 50);
+doc.text("Telefono: " + telefonoPdf, 10, 60);
+doc.text("Provincia: " + provinciaPdf, 10, 70);
+doc.text("Localidad: " + localidadPdf, 10, 80);
+doc.text("Codigo Postal: " + cpPdf, 10, 90);
+doc.text("Sugerencia: " + sugerenciaPdf, 10, 100);
+doc.setFontSize(8);
+doc.text("El documento es generado automatocamente, por lo tanto es unico para su control.", 10, 150);
 
 //--- Salva archivo PDF
 doc.save("sugerencia-floower.pdf")
