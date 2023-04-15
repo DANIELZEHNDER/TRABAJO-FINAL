@@ -4,7 +4,7 @@ body{
 }
 
 
-CURSOS
+/* CURSOS */
 
 #solapa-activa {
     color: #13a76b;
@@ -20,15 +20,15 @@ CURSOS
 
 #título-curso {
 padding-top: 10px;
-padding-bottom: 15px;
+padding-bottom: 10px;
 }
 
-#inscribirme {
+#másinfo {
     background-color: #13a76b;
     border: none;
 }
 
-#inscribirme:hover {
+#másinfo:hover {
     transform: scale(1.1);
 }
 
@@ -43,11 +43,12 @@ padding-bottom: 15px;
 .accordion-body {
     background-color: #8de4af;
 }
+/* FIN DE CURSOS */
+
 
 /*=============
   Efectos LINKS
 ===============*/
-
 
 #efectoslink {
     display: inline-block;
@@ -68,7 +69,6 @@ padding-bottom: 15px;
     width: 100%;
     background: #226292;
     }
-
 
     #efectoslink2 {
         
@@ -109,22 +109,7 @@ padding-bottom: 15px;
         }
 
 
-
-
-
-
-
-
-
-
-    
-
-
 .capa {color:#EDEAE5}
-
-
-
-
 
 
 /* Formulario Wizard */
@@ -146,9 +131,8 @@ padding-bottom: 15px;
 /* Fin Formulario Wizard */
 
 
-
-
 /*megusta logo*/
+
 .main {
    
     height: 10%;
@@ -278,12 +262,7 @@ padding-bottom: 15px;
 
 
 
-/*DESARROLLADORES*/
-
-
-
-
-
+/* DESARROLLADORES */
 
 #Cdesarrolladores{
     
@@ -316,3 +295,4 @@ background: linear-gradient(0deg, rgb(210, 215, 215) 0%, rgb(69, 68, 74) 100%);
     color: black;
 }
 
+/* FIN DE DESARROLLADORES */
