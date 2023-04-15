@@ -1,6 +1,6 @@
-footer {
-  background-color: #13a76b;
-}
+
+  
+
 .footerContainer {
   width: 100%;
   padding: 70, 30, 20px;
@@ -39,7 +39,7 @@ footer {
   list-style-type: none;
 }
 .footerNav ul li a {
-  color: aliceblue;
+  color: trans;
   margin: 20px;
   text-decoration: none;
   font-size: 1.3em;
@@ -65,3 +65,4 @@ footer {
   font-weight: 400;
   margin: 0px 5px;
 }
+

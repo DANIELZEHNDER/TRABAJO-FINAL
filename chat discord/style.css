@@ -4,29 +4,32 @@
 }
 
 
-i {
+#btnMostrarDiscord {
+    background-color: transparent;
     text-align: center;
     font-size: 50px;
     align-content: center;
-    margin-left: 23%;
+ margin-top: 30%;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
-    color: blueviolet;
+    color: linear-gradient(45deg, #1a3f30,#13a76b);
+    border: transparent;
+   
    
 
 }
 
-i:hover {
-     transform: scale(2.2);}
 
-     #btnMostrarDiscord{
-        border: transparent;
+#btnMostrarDiscord:hover {
+     transform: scale(1.2);
+     color: blueviolet;}
+
+     
        
-     }
+     
 
-   .col {
-   float: inline-end;
-    
-   }
-   #fondo{ transform: translate(-100px,500px);}
+ #titulodiscord{color:black;
+background-color: transparent;
+}
+
