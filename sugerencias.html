@@ -45,19 +45,19 @@
                     <h3>Datos personales:</h3>
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
-                        <input name="Nombre" id="nombreInput" class="form-control" type="text" required>
+                        <input name="Nombre" id="nombreInput" class="form-control datoform" type="text" required>
                     </div>
                     <div class="form-group">
                         <label for="apellido">Apellido</label>
-                        <input name="Apellido" id="apellidoInput" class="form-control" type="text" required required>
+                        <input name="Apellido" id="apellidoInput" class="form-control datoform" type="text" required required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input name="Email" type="email" class="form-control" id="emailInput" placeholder="usuario@dominio.com" required>
+                        <input name="Email" type="email" class="form-control datoform" id="emailInput" placeholder="usuario@dominio.com" required>
                     </div>
                     <div class="form-group">
                         <label for="Telefono">Telefono</label>
-                        <input name="Telefono" id="telefonoInput" class="form-control" type="number" placeholder="" required>
+                        <input name="Telefono" id="telefonoInput" class="form-control datoform" type="number" placeholder="" required>
                     </div>
                     <div id="validacion"></div>
                     <div class="col text-center">
@@ -69,15 +69,15 @@
                     <h3>Datos de residencia:</h3>
                     <div class="form-group">
                         <label for="provincia">Provincia</label>
-                        <input name="Provincia" id="provinciaInput" class="form-control" type="text" placeholder="Provincia de residencia..." required>
+                        <input name="Provincia" id="provinciaInput" class="form-control datoform" type="text" placeholder="Provincia de residencia..." required>
                     </div>
                     <div class="form-group">
                         <label for="localidad">Ciudad / Localidad</label>
-                        <input name="Ciudad" id="localidadInput" class="form-control" type="text" placeholder="">
+                        <input name="Ciudad" id="localidadInput" class="form-control datoform" type="text" placeholder="">
                     </div>
                     <div class="form-group">
                         <label for="cp">Codigo Postal</label>
-                        <input name="CP" id="cpInput" class="form-control" type="text" placeholder="">
+                        <input name="CP" id="cpInput" class="form-control datoform" type="text" placeholder="">
                     </div>
                     <div class="col text-center">
                         <button type="button" onclick="back1()" class="btn previous-btn btn-success m-2">Volver</button>
@@ -88,7 +88,7 @@
                 <div id="paso3" class="step">
                     <div class="form-group">
                         <label for="sugenrencia"><h3>Sugerencia:</h3></label>
-                        <textarea name="Sugerencia" id="sugenrenciaInput" rows="6" class="form-control" required></textarea>
+                        <textarea name="Sugerencia" id="sugenrenciaInput" rows="6" class="form-control datoform" required></textarea>
                     </div>
                     <div id="aviso" style="color: black; font-weight: bold; font-size: small;"></div>
                     <div class="col text-center">
@@ -115,7 +115,7 @@
                     <div class="col text-center">
                         <button type="button" onclick="back3()" class="btn btn-success m-2">Volver</button>
                         <button type="button" onclick="generapdf()" class="btn btn-danger m-2">Descargar PDF</button>
-                        <button type="submit" class="btn btn-primary m-2">Enviar</button>
+                        <button onclick="https://formsubmit.co/heredia.gabriel@gmail.com" class="btn btn-primary m-2">Enviar</button>
                     </div>
                 </div>
             </form>
