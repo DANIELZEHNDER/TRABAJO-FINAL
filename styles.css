@@ -1,6 +1,5 @@
 body{
     background-color: #EDEAE5;
-<<<<<<< HEAD
 }
 
 
@@ -43,10 +42,10 @@ padding-bottom: 15px;
 .accordion-body {
     background-color: #8de4af;
 }
-=======
-    
-/*Efectos LINKS*/
 
+=======
+/*Efectos LINKS*/
+=======
 
 
 #efectoslink {
@@ -146,7 +145,7 @@ i:hover {
 /* Formulario Wizard */
 
 .multi {
- background-color: #13a76b;
+ background-color: #8de4af;
  border-radius: 10px;
  box-shadow: 4px 4px 4px #565a5d;
 }
@@ -292,7 +291,6 @@ i:hover {
 
 
 
->>>>>>> DANIEL-
 
 
 /*DESARROLLADORES*/
@@ -332,3 +330,4 @@ background: linear-gradient(0deg, rgb(210, 215, 215) 0%, rgb(69, 68, 74) 100%);
     cursor: pointer;
     color: black;
 }
+
