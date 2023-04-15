@@ -20,7 +20,7 @@ function sig1() {
 
   if (nombreCliente != "" && apellidoCliente != "" && emailCliente != "" && telefonoCliente != "") {
     document.getElementById("paso2").classList.add("active");
-    document.getElementById("paso1").classList.remove("active"); 
+    document.getElementById("paso1").classList.remove("active");
   }
 };
 
