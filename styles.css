@@ -1,5 +1,6 @@
 body{
     background-color: #EDEAE5;
+    overflow-x: hidden;
 }
 
 
@@ -43,9 +44,9 @@ padding-bottom: 15px;
     background-color: #8de4af;
 }
 
-=======
-/*Efectos LINKS*/
-=======
+/*=============
+  Efectos LINKS
+===============*/
 
 
 #efectoslink {
@@ -307,7 +308,6 @@ background: linear-gradient(0deg, rgb(210, 215, 215) 0%, rgb(69, 68, 74) 100%);
 
 }
 .card-img-top{
-    border-radius: ;
     width: 200px;
     height: 200px;
     object-fit: cover;
