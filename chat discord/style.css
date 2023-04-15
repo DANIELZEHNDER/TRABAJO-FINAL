@@ -9,7 +9,7 @@
     text-align: center;
     font-size: 50px;
     align-content: center;
- margin-top: 30%;
+ margin-top: 2%;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
@@ -29,7 +29,9 @@
        
      
 
- #titulodiscord{color:black;
+ #titulodiscord{
+    margin-top: 10%;
+    color:black;
 background-color: transparent;
 }
 
