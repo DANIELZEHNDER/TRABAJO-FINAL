@@ -128,6 +128,14 @@ padding-bottom: 10px;
     display: block;
 }
 
+.datoform{
+    background-color: #EDEAE5 !important; 
+    border: 1px solid #222629 !important;
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
 /* Fin Formulario Wizard */
 
 
