@@ -3,10 +3,10 @@
 
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,67 +37,69 @@
         </ul>
       </div>
     </div>
-    
-   
-    
 
-  </script>
+
+
+<!--INICIO LOGO CON FLORES CAMBIAN AUTOMATICAMENTE-->
+   
     <div class="footerbotton">
       <div class='main'>
-        <div class="sweet">
-           <p id="palabra">Fl</p>
-            <img src="/img/f1.png" class="img1 ani_img" id="flores"></img>
-            <img src="/img/f0.png" class="img2 ani_img" id="flores"></img>
-            <p id="palabra">wer</p>
+        <div class="flower">
+          <p id="palabra">Fl</p>
+          <img src="/img/f1.png" class="img1 ani_img" id="flores"></img>
+          <img src="/img/f0.png" class="img2 ani_img" id="flores"></img>
+          <p id="palabra">wer</p>
         </div>
-       
-    </div>
-    <script>
-        const CookiesArray = [
-        "img/f8.png",
-            "img/f9.png",
-            "img/f0.png",
-            "img/f1.png",
-            "img/f2.png",
-            "img/f3.png",
-            "img/f4.png",
-            "img/f5.png",
-            "img/f6.png",
-            "img/f7.png",
-            "img/f8.png",
-            "img/f9.png",
-  ];
-  
-  const img1 = document.querySelector(".img1");
-  const img2 = document.querySelector(".img2");
-  
-  // Llamar a la función RandomCookies una vez para establecer las imágenes iniciales
-  RandomCookies(CookiesArray);
-  
-  // Cambiar automáticamente las imágenes cada 2 segundos
-  setInterval(() => {
-  RandomCookies(CookiesArray);
-  }, 2000);
-  
-  function RandomCookies(array) {
-    img1.classList.add('flipInX');
-    img2.classList.add('flipInX');
-    let randomNum = Math.floor(Math.random() * array.length);
-    img1.setAttribute("src", array[randomNum]);
-    img2.setAttribute("src", array[Math.floor(Math.random() * array.length)]);
-  }
-  
-  // Restablecer las animaciones de las imágenes después de que cambien automáticamente
-  function resetAnimations() {
-    img1.classList.remove('flipInX');
-    img2.classList.remove('flipInX');
-  }
-  
-  // Llamar a la función resetAnimations después de cada cambio de imagen
-  img1.addEventListener('animationend', resetAnimations);
-  img2.addEventListener('animationend', resetAnimations);
-</script>  
-    
+
+      </div>
+      <script>
+        const FloowerArray = [
+          "img/f8.png",
+          "img/f9.png",
+          "img/f0.png",
+          "img/f1.png",
+          "img/f2.png",
+          "img/f3.png",
+          "img/f4.png",
+          "img/f5.png",
+          "img/f6.png",
+          "img/f7.png",
+          "img/f8.png",
+          "img/f9.png",
+        ];
+
+        const img1 = document.querySelector(".img1");
+        const img2 = document.querySelector(".img2");
+
+        // Llamar a la función RandomFloower una vez para establecer las imágenes iniciales
+        RandomFloower(FloowerArray);
+
+        // Cambiar automáticamente las imágenes cada 2 segundos
+        setInterval(() => {
+          RandomFloower(FloowerArray);
+        }, 2000);
+
+        function RandomFloower(array) {
+          img1.classList.add('flipInX');
+          img2.classList.add('flipInX');
+          let randomNum = Math.floor(Math.random() * array.length);
+          img1.setAttribute("src", array[randomNum]);
+          img2.setAttribute("src", array[Math.floor(Math.random() * array.length)]);
+        }
+
+        // Restablecer las animaciones de las imágenes después de que cambien automáticamente
+        function resetAnimations() {
+          img1.classList.remove('flipInX');
+          img2.classList.remove('flipInX');
+        }
+
+        // Llamar a la función resetAnimations después de cada cambio de imagen
+        img1.addEventListener('animationend', resetAnimations);
+        img2.addEventListener('animationend', resetAnimations);
+      </script>
+      
+      <!--FIN LOGO CON FLORES CAMBIAN AUTOMATICAMENTE-->
+
       <p>
         Copyright &copy;2023 - Designed by
         <span class="designer">Floowers</span>

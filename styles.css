@@ -6,6 +6,7 @@ body{
     font-family: 'Cairo', sans-serif !important;
     background-color: #EDEAE5;
     overflow-x: hidden;
+  
 }
 
 #botón-primario{
@@ -71,7 +72,7 @@ padding-bottom: 10px;
 
 
 /*=============
-  Efectos LINKS
+  Efectos LINKS header
 ===============*/
 
 #efectoslink {
@@ -93,6 +94,9 @@ padding-bottom: 10px;
     width: 100%;
     background: #226292;
     }
+    /*=============
+  Efectos LINKS FOOTER
+===============*/
 
     #efectoslink2 {
         
@@ -246,7 +250,7 @@ padding-bottom: 10px;
   /* FIN DE FORMULARIO CONTACTO */
 
 
-/*megusta logo*/
+/*inicio LOGO CON FLORES*/
 
 .main {
    
@@ -258,7 +262,7 @@ padding-bottom: 10px;
     justify-content: center;
 }
 
-.sweet {
+.flower {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -363,7 +367,7 @@ padding-bottom: 10px;
     animation-name: flipInX;
 }
 
-/*-------------------discord----------------------------*/
+/*FIN LOGO CON FLORES*/
 
 
 /* DESARROLLADORES */
