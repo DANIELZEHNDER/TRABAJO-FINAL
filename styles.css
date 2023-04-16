@@ -263,8 +263,9 @@ padding-bottom: 10px;
 }
 
 #palabra {
-    font-family: "Rubik Iso", cursive;
- font-size: 50px;
+    font-family: 'Karantina', cursive;
+    
+ font-size:100px;
     text-align: center;
     text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
         0 0 200px #0072ff;
