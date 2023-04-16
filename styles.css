@@ -379,9 +379,8 @@ padding-bottom: 10px;
 background: linear-gradient(0deg, rgb(210, 215, 215) 0%, rgb(69, 68, 74) 100%);
 
 }
-.card-img-top{
-    width: 200px;
-    height: 400px;
+#CardImg{
+    height: 500px;
     object-fit: cover;
     margin: auto;
     
@@ -394,13 +393,13 @@ background: linear-gradient(0deg, rgb(210, 215, 215) 0%, rgb(69, 68, 74) 100%);
 }
 .bi{
     font-size: 25px;
-    color: rgb(36, 33, 65);
+    color: #222629;
     
 }
 
 .bi:hover{
     cursor: pointer;
-    color: black;
+    color:#13a76b
 }
 
 /* FIN DE DESARROLLADORES */
