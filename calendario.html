@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK A HOJA DE ESTILOS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- LINK A INCONS8 - ICONOS -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+  <!-- LINK A FAVICON -->
+  <link rel="icon" href="img/logos/favicon.png" type="png" sizes="16px">
+
+    <!-- LINK A BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- LOAD JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <title>FLOOWER - home</title>
+</head>
+
+<body>
+<header id="header"></header>
+<div class="container">
+    <div class="row p-2">
+        <h1>Calendario de siembra</h1>
+        <p>Este poster que nos brinda INTA, contiene el calendario de siembra para la huerta agroecológica. Especies de todas las estaciones, primavera-verano y otoño-invierno, formas de siembra y días para su cosecha.</p>
+        <p>La llegada del otoño puede ser también una gran oportunidad para poner manos a la tierra e inaugurar nuestra propia huerta.</p>
+        <div class="row">
+            <img src="./img/calendario.png" alt="" srcset="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 mb-3">DESCARGAR CALENDARIO: <a href="./img/calendario_de_siembra.pdf" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down" style="color: white;" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z"/>
+            <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
+          </svg> Descargar</a>
+        </div>
+    </div>
+</div>
+<footer id="footer"></footer>
+</body>
+
+</html>
