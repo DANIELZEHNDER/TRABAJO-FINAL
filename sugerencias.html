@@ -13,6 +13,9 @@
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
+    <!-- LINK A FAVICON -->
+    <link rel="icon" href="img/logos/favicon.png" type="png" sizes="16px">
+
     <!-- LINK A BOOTSTRAP CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -32,7 +35,7 @@
     </script>
     <!--jsPDF-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
-    <title>Vivero Floower - Formulario de Sugerencias</title>
+    <title>FLOOWER - sugerencias</title>
 </head>
 
 <body class="">
@@ -61,7 +64,7 @@
                     </div>
                     <div id="validacion"></div>
                     <div class="col text-center">
-                        <button type="submit" onclick="sig1()" class="btn btn-success m-2">Siguiente</button>
+                        <button type="submit" onclick="sig1()" class="btn btn-success m-2" id="botón-primario">Siguiente</button>
                     </div>
                 </div>
                 <!-- Paso 2 -->
@@ -80,8 +83,8 @@
                         <input name="CP" id="cpInput" class="form-control datoform mb-5" type="text" placeholder="">
                     </div>
                     <div class="col text-center">
-                        <button type="button" onclick="back1()" class="btn previous-btn btn-success m-2">Volver</button>
-                        <button type="submit" onclick="sig2()" class="btn btn-success m-2">Siguiente</button>
+                        <button type="button" onclick="back1()" class="btn previous-btn btn-success m-2" id="botón-secundario">Volver</button>
+                        <button type="submit" onclick="sig2()" class="btn btn-success m-2" id="botón-primario">Siguiente</button>
                     </div>
                 </div>
                 <!-- Paso 3 -->
@@ -92,8 +95,8 @@
                     </div>
                     <div id="aviso" style="color: black; font-weight: bold; font-size: small;"></div>
                     <div class="col text-center">
-                        <button type="button" onclick="back2()" class="btn btn-success m-2">Volver</button>
-                        <button type="button" onclick="sig3()" class="btn btn-success m-2">Siguiente</button>
+                        <button type="button" onclick="back2()" class="btn btn-success m-2" id="botón-secundario">Volver</button>
+                        <button type="button" onclick="sig3()" class="btn btn-success m-2" id="botón-primario">Siguiente</button>
                     </div>
                 </div>
                 <!-- Resumen -->
@@ -113,9 +116,9 @@
                     </div>
                     
                     <div class="col text-center">
-                        <button type="button" onclick="back3()" class="btn btn-success m-2">Volver</button>
+                        <button type="button" onclick="back3()" class="btn btn-success m-2" id="botón-secundario">Volver</button>
                         <button type="button" onclick="generapdf()" class="btn btn-danger m-2">Descargar PDF</button>
-                        <button type="button" onclick="enviamail()" class="btn btn-primary m-2">Enviar</button>
+                        <button type="button" onclick="enviamail()" class="btn btn-primary m-2" id="botón-primario">Enviar</button>
                     </div>
                 </div>
             </form>
