@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500;600&display=swap');
+
 /* GENERAL PARA TODOS*/ 
 
 body{
+    font-family: 'Cairo', sans-serif !important;
     background-color: #EDEAE5;
     overflow-x: hidden;
 }
