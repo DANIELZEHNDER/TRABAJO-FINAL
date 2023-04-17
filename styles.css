@@ -64,6 +64,11 @@ padding-bottom: 10px;
     border-color: #13a76b;
 }
 
+.accordion-button:not(.collapsed) {
+    color: #EDEAE5 !important;
+    background-color: #6a6e71 !important;
+}
+
 .accordion-body {
     background-color: #8de4af;
 }
