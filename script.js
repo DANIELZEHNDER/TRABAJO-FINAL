@@ -114,6 +114,9 @@ doc.save("sugerencia-floower.pdf")
 
 }
 
+function enviar(){
+  location.href ='index.html';
+}
 
 
 /* --- Fin Formulario Multi Step --- */

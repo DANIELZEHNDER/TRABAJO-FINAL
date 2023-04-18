@@ -133,7 +133,18 @@
                     <div class="col text-center">
                         <button type="button" onclick="back3()" class="btn btn-success m-2" id="botón-secundario">Volver</button>
                         <button type="button" onclick="generapdf()" class="btn btn-danger m-2">Descargar PDF</button>
-                        <button type="button" onclick="enviamail()" class="btn btn-primary m-2" id="botón-primario">Enviar</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#inicio" class="btn btn-primary m-2" id="botón-primario">Enviar</button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="inicio" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                El formulario fue Enviado!
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="enviar()">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </form>
